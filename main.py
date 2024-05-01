@@ -1,6 +1,7 @@
 import numpy as np
 from scipy.stats import norm
 
+
 r = 0.10
 S = 30
 K = 40
