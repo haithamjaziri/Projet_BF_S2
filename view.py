@@ -1,6 +1,8 @@
-from main import *
+import logging
 
-print("Option Price is : ", round(blackScholes(r, S, K, T, sigma, type=Type_Opt), 5))
+logger = logging.getLogger(__name__)
+logger.info("Option Price is : ", round(blackScholes(r, S, K, T, type=Type_Opt), 5))
+print("Option Price is : ", round(blackScholes(r, S, K, T, type=Type_Opt), 5))
 
 print("Delta Option is : ", round(delta_calc(r, S, K, T, sigma, type=Type_Opt), 4))
 
